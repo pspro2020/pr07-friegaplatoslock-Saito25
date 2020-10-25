@@ -31,7 +31,7 @@ public abstract class PlateTray {
         }
     }
 
-    public synchronized void putPlate(Plate plate) {
+    public void putPlate(Plate plate) {
         Objects.requireNonNull(plate);
 
         lock.lock();
